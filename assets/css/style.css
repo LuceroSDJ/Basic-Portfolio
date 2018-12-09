@@ -1,70 +1,77 @@
 
 
+/***************** CSS FOR index.html, portfolio. html & contact.html ******************/
 
-/** This is the top white tab **/
+/** Header must be position: fixed & z-index:1 so it stays at the very top and on top of the other elements **/
 header {
-    position: fixed;
-    top: 0;
-    margin: 0 auto;
     background-color: #ffffff;
+    position: fixed;
+    margin: 0 auto;
+    float: left;
     width: 100%;
     z-index: 1;
-    display: block;
-    
+    top: 0;      
 }
 
-.navContent {
+nav {
+    float: right;
+}
+
+.headerContent {
     width: 960px;
-    margin: 0 auto;
-    
+    margin: 0 auto 0 auto; /** this attribute value centers our content **/
 }
 
 .mainLogo {
     float: left;
     color: white;
-    background-color: #4aaaa5;
     margin: 0 auto;
-    text-align: center;
-    padding: 0 20px 0 20px;   
+    padding: 0 20px 0 20px; 
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;  
 }
 
 a {
-    /*remove underline on links*/
     text-decoration: none;
 }
 
-
  li {
-     list-style: none;
      float: left;
+     list-style: none;
      margin-left: 20px;
      padding-top: 20px;
      text-align: center;
-
  }
 
  li a:hover {
+     font-size: 25px;
      color: #4aaaa5;
-     font-size: 30px;
-     text-shadow: 4px 7px lightgray;
-     font-family: cursive;
      font-weight: bold;
+     font-family: cursive;
+     text-shadow: 4px 7px lightgray;
  }
 
- nav {
-    float: right;
-}
-
-
-
 body { 
-    color: #777777;
+    font-family: Arial, Helvetica, sans-serif;
     /** I used Eye Dropper tool to match the color from the assignment image **/
     background-color: #ededed;
-    font-family: Arial, Helvetica, sans-serif;
+    color: #777777;
     margin: 0 auto;
-    text-align: center;
-    padding: 0;
+}
+
+.container {
+    height: 900px;
+    margin: 0 auto;
+    margin-top: 120px;
+    margin-bottom: 120px;   
+    background-color: #ffffff;
+    padding: 30px 20px 20px 30px;
+    width: 920px;  /** 20+920+20= 960 **/   
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+h2 {
+    color: #4aaaa5;
 }
 
 #myPicture {
@@ -72,73 +79,31 @@ body {
     width: 150px;
     height: 220px;
     margin-right: 15px;
+    border-radius: 10px;   
 }
 
-/** mainLogo styling..must be fixed position **/
-h1 {
-    font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-h2 {
-    color: #4aaaa5;
-    font-family: Georgia, 'Times New Roman', Times, serif;
-    margin: 10px;
-}
-
-.container {
-    /**ADJUST THE WIDTH: TOTAL WIDTH SHOULD BE 960PX**/
-    width: 960px;
-    /* height: 80%; */
-    background-color: #ffffff;
-/**CHANGE PADDING LATER*/
-    padding-right: 20px;
-    padding-left: 20px;
-    display: inline-block;
-    margin: 0 auto;
-    margin-top: 120px;
-    /**add margine left & right if needed*/
-    
-   
-}
-
-.blank {
-    width: 40%;
-    background-color: #ffffff;
-    display: inline-block;
-}
-
-
+/** we want to add a #4aaaa5 color top-border & padding at the bottom so the copyright sign is not right on the edge of our footer **/
 footer {
-    background-color: #666666;
+    width: 100%;
+    height: 35px;
     color: white;
     text-align: center;
-    height: 50px;
-    border-width: 5px;
+    padding-bottom: 10px;
+    border-top-width: 10px;
     border-top-style: solid;
     border-color: #4aaaa5;
-    position: fixed;
-    width: 100%;
-    bottom: 0;
+    background-color: #666666;
+
+        
 }
 
-/** if there is a better way to center the copyright text, CHANGE IT **/
-footer p {
-    position: absolute;
-    bottom: 4px;
-    margin: 0;
-    left: 46%;
-    right: 46%;   
-}
-
-
-
-/** Contact Invite Page CSS **/
+/***************** contact.html *****************/
 .form-control {
     width: 100%;
     height: 30px;
     text-align: center;
-    box-sizing: border-box;
     border-radius: 10px;
+    box-sizing: border-box;
     box-shadow: 5px 10px gray; 
 }
 
@@ -147,65 +112,54 @@ form .message {
 }
 
 form .submit {
-    background-color: #4aaaa5;
+    width: 25%;
     color: white;
-    width: 20%;
-    margin: 15px 0 35px 0;
+    font-size: 20px;
+    margin: 20px 0 35px 0;
+    background-color: #4aaaa5;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
 
+form .submit:hover {
+    color: #4aaaa5;
+    background-color: purple;    
+}
+
+#link { 
+    color: white;
+}
+
+#link:hover {
+    color: purple;
+    font-size: 25px;
+    font-weight: bold;
+    font-family: cursive;
+    text-shadow: 3px 5px lightgray;
 }
 
 
-/**PORTFOLIO**/
- 
+/***************** portfolio.html *****************/
 
+.image {   
+    width: 40%;
+    float: left;
+    overflow: auto;
+    position: relative;
+    margin: 20px 40px 20px 0;   
+}
 
 .child {
     background: #4aaaa5;
-    position: absolute;
-    bottom: 15px;
     padding: 5px 0 5px 0;
+    position: absolute;
     text-align: center;
-    width: 100%;
-   
+    bottom: 15px;
+    width: 100%;  
 }
 
-.image {   
-    position: relative;
-    width: 35%;
-    margin: 40px 0 40px 0; 
-    overflow: auto;
-    float: left;
-    
+.section1 {
+    width: 70%;
 }
-
-#a, #b {
-    float: left;   
-}
-
-#b { 
-    left: 20px;
-}
-
-#c {
-    /* float: none; */
-    /**allows flowing elements on both sides**/
-    /* clear: both; */
-    margin-right: 20px;
- 
-}
-
-#d {
-    float: left;
-    
-
-    
-}
-
-#e {
-    
-}
-
-.container {
-   
-
+.section2 {
+    width: 30%;
 }

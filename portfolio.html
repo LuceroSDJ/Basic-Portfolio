@@ -9,15 +9,16 @@
 
 </head>
 <body>
-<!--CHECK INDENTATION HERE-->
-<header>
-    <div class="navContent">
+
+
+<header>  <!--header must be fixed positioned & z-index: 1 to keep it on top -->
+    <div class="headerContent">
         <div class="mainLogo">
             <h1>Carmen Lucero Sandoval De Jesus</h1>
         </div>
 
             <nav>
-                <ul class="menu">
+                <ul>
                     <li><a href="index.html">About Me</a></li>
                     <li><a href="portfolio.html">Portfolio</a></li>
                     <li><a href="contact.html">Contact</a></li>
@@ -27,78 +28,69 @@
     </div> 
 </header>
 
-    <div class="container">
 
-        <h2>Portfolio</h2>
-        <hr>
+<div class="container">
+
+    <h2>Portfolio</h2>
+    <hr>
    
+        <section class="section1">
+            <!-- parent -->
+            <div class="image">
+                <img src="assets/images/lorempixel-1.jpg" alt="horse">
+                    <!-- child -->
+                    <div class="child">
+                        <a id="link" href="#">First</a>
+                    </div>
+            </div>
+
+            <!-- parent -->
+            <div class="image">
+                <img src="assets/images/lorempixel-2.jpg" alt="wave">
+                    <!-- child -->
+                    <div class="child">
+                        <a id="link" href="#">Second</a>
+                    </div>
+            </div>
+   
+            <!-- parent -->
+            <div class="image">
+                <img src="assets/images/lorempixel-3.jpg" alt="family">
+                    <!-- child -->
+                    <div class="child">
+                        <a id="link" href="#">Third</a>
+                    </div>
+            </div>
+
+
+            <!-- parent -->
+            <div class="image">
+                <img src="assets/images/lorempixel-4.jpg" alt="fall">
+                    <!-- child -->
+                    <div class="child">
+                        <a id="link" href="#">Fourth</a>
+                    </div>
+            </div>
+
+            <!-- parent -->
+            <div class="image">
+                <img src="assets/images/lorempixel-5.jpg" alt="puppy">
+                    <!-- child -->
+                    <div class="child">
+                        <a id="link" href="#">Fifth</a>
+                    </div>
+            </div>
+           
+        </section> 
+        
+        <section class="section2"></section>
     
-        <!-- parent -->
-        <div class="image" id="a">
-            <img src="assets/images/lorempixel-1.jpg" alt="horse">
-                <!-- child -->
-                <div class="child">
-                    <a href="#">First</a>
-                </div>
-        </div>
-
-        <!-- parent -->
-        <div class="image" id="b">
-            <img src="assets/images/lorempixel-2.jpg" alt="wave">
-                <!-- child -->
-                <div class="child">
-                    <a href="#">Second</a>
-                </div>
-        </div>
-    
-        <!-- parent -->
-        <div class="image" id="c">
-            <img src="assets/images/lorempixel-3.jpg" alt="family">
-                <!-- child -->
-                <div class="child">
-                    <a href="#">Third</a>
-                </div>
-        </div>
-
-        <!-- parent -->
-        <div class="image" id="d">
-            <img src="assets/images/lorempixel-4.jpg" alt="fall">
-                <!-- child -->
-                <div class="child">
-                    <a href="#">Fourth</a>
-                </div>
-        </div>
-
-        <!-- parent -->
-        <div class="image" id="e">
-            <img src="assets/images/lorempixel-5.jpg" alt="puppy">
-                <!-- child -->
-                <div class="child">
-                    <a href="#">Fifth</a>
-                </div>
-        </div>
-
     </div>
 
     
-
-
-
-    
-
-
-
-
-
-
-
-
-
-
-
-    <footer>
-        <p>Copyright &copy;</p>
-    </footer>
+<footer>
+    <p>Copyright &copy;</p>
+</footer>
     
        
 </body>
